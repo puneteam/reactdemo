@@ -21,12 +21,12 @@ function App() {
         <Router>
               <Header />
                 <div className="container">
-                <Routes>
+                <Switch>
                   <Route path="/" element={<ListEmployeeComponent/>} />
                   <Route path="/employees" element={<ListEmployeeComponent/>} />
                   <Route path="/add-employee/:id" element={<CreateEmployeeComponent/>} />
                   <Route path="/view-employee/:id" element={<ViewEmployeeComponent/>} />
-                </Routes>
+                </Switch>
                 </div>
             <Footer/>
         </Router>

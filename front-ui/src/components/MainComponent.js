@@ -21,7 +21,11 @@ export default class MainComponent extends Component {
   {
     return (
       
+
+        
         <div>
+           {/*  <h1>"this main component"</h1>
+           console.log("main component");*/}
             <h2 className="text-center">User List</h2>
             <div className = "row">
                <button className="btn btn-primary" onClick={this.teacher}> Teacher</button>

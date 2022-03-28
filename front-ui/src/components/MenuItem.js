@@ -13,7 +13,7 @@ const MenuItem = ({ items }) => {
     </>
    ) : (
     
-    <a href={items.link}>{items.title}</a>
+    <a href={items.ll}>{items.title}</a>
     
   )}
   </li>

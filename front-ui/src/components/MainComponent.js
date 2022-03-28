@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import Dropdown1 from './Dropdown1';
 export default class MainComponent extends Component {
   constructor(props)
   {
@@ -24,6 +24,7 @@ export default class MainComponent extends Component {
 
         
         <div>
+            <Dropdown1/>
            {/*  <h1>"this main component"</h1>
            console.log("main component");*/}
             <h2 className="text-center">User List</h2>

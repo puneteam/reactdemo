@@ -8,7 +8,7 @@ export default class Dropdown1 extends Component {
   render() {
     return (
       <div>
-     <Navbar  navbar navbar-expand-sm bg-dark navbar-dark>
+     <Navbar  navbar navbar-expand-lg bg-light navbar-light>
   <Container>
   <Dropdown className="d-inline mx-2">
     <Dropdown.Toggle id="dropdown-autoclose-true">

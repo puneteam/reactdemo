@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import MainComponent from './MainComponent';
-//import {BrowserRouter as Router, Route,Switch} from 'react-router-dom'
-//import MainComponent from './MainComponent';
 
 import SignIn from './SignIn';
 
@@ -10,20 +8,22 @@ export default class LoginApp extends Component {
     {
       super(props);
       this.state={employee:'',user:'',password:'',loggedin:'false',error:''};
+    
        }
     
     componentWillMount()
     {
      // this.setState({employee:emp data});
     }
+
+   
     render() {
       if(this.state.loggedin)
       {
-        return <div>
-        
+        return <div>  
     <button onClick={()=>this.setState({loggedin:false})}>Logout</button>
-
-        </div>
+    
+ </div>
     }
     else
     {
@@ -41,8 +41,9 @@ export default class LoginApp extends Component {
           {
             this.setState({loggedin:true});
             console.log("submit click");
-            //<MainComponent/>
-           this.props.history.push('/m');
+            this.props.history.push('/m');
+          
+           // window.location.href = `/${e.target.value}`;
             
           }
           else{
